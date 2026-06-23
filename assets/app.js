@@ -73,8 +73,8 @@
         '<h1>' + esc(h.titleA) + '<span class="ac">' + esc(h.titleAccent) + '</span>' + esc(h.titleB) + '</h1>' +
         '<p class="lead">' + esc(h.sub) + '</p>' +
         '<div class="cta-row">' +
-          btn(CFG.downloadWindows, "gl-btn--primary gl-btn--lg", "windows", h.windows) +
-          btn(CFG.downloadMac, "gl-btn--lg", "apple", h.mac) +
+          btn("install.html#card-windows", "gl-btn--primary gl-btn--lg", "windows", h.windows) +
+          btn("install.html#card-macos", "gl-btn--lg", "apple", h.mac) +
           btn(CFG.telegram, "gl-btn--lg gl-btn--ghost", "telegram", h.telegram) +
         '</div>' +
         '<div class="req">' + icon("gauge", 14) + '<span>' + esc(CFG.systemRequirements) + '</span></div>' +
