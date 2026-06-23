@@ -74,9 +74,11 @@
       <strong>Перетащите Lexipane.app в папку Applications.</strong>
     </span></li>
     <li><span>
-      В открытом DMG запустите <strong>«Install Lexipane.command»</strong> — он автоматически уберёт
-      системную блокировку и откроет приложение.<br/>
-      <em style="font-size:13px;color:var(--text-faint)">Если появится предупреждение Terminal — нажмите «Открыть».</em>
+      Откройте <strong>Terminal</strong> (Finder → Программы → Утилиты → Terminal) и выполните команду:
+      <br/><br/>
+      <code>xattr -dr com.apple.quarantine /Applications/Lexipane.app</code>
+      <br/><br/>
+      Это снимает карантинный флаг macOS, после чего приложение откроется без предупреждений.
     </span></li>
     <li><span>
       macOS попросит три разрешения — нажмите <strong>«OK»</strong> на каждое:
