@@ -29,24 +29,36 @@
 
   /* ---------------- header ---------------- */
   function header(page, t) {
-    var tabs = PAGES.map(function (p) {
-      return '<a class="tab' + (p === page ? " is-active" : "") + '" href="' + HREF[p] + '">' +
-        icon(TABICON[p], 16) + '<span>' + esc(t.nav[p]) + '</span></a>';
-    }).join("");
     var opts = LANGS.map(function (l) {
       return '<div class="lang-opt' + (l.code === lang() ? " is-sel" : "") + '" data-lang="' + l.code + '">' +
         esc(l.name) + '<span class="l">' + esc(l.label) + '</span></div>';
     }).join("");
     var cur = LANGS.filter(function (l) { return l.code === lang(); })[0] || LANGS[0];
-    return '' +
-    '<header class="site-head"><div class="wrap">' +
+    var langWidget = '<div class="lang">' +
+      '<button class="lang-btn" id="langBtn">' + icon("globe", 15) + esc(cur.label) + icon("caret", 13) + '</button>' +
+      '<div class="lang-menu" id="langMenu">' + opts + '</div>' +
+    '</div>';
+
+    if (page === "article") {
+      var backHref = document.body.getAttribute("data-back") || "guides.html";
+      var backLabel = lang() === "ru" ? "← Инструкции" : "← Guides";
+      return '<header class="site-head"><div class="wrap">' +
+        '<a class="brand" href="index.html"><img src="assets/logo/lexipane-icon.svg" width="30" height="30" alt="Lexipane"/><b>Lexipane</b></a>' +
+        '<a class="tab" href="' + backHref + '">' + backLabel + '</a>' +
+        '<span class="spacer"></span>' +
+        langWidget +
+      '</div></header>';
+    }
+
+    var tabs = PAGES.map(function (p) {
+      return '<a class="tab' + (p === page ? " is-active" : "") + '" href="' + HREF[p] + '">' +
+        icon(TABICON[p], 16) + '<span>' + esc(t.nav[p]) + '</span></a>';
+    }).join("");
+    return '<header class="site-head"><div class="wrap">' +
       '<a class="brand" href="index.html"><img src="assets/logo/lexipane-icon.svg" width="30" height="30" alt="Lexipane"/><b>Lexipane</b></a>' +
       '<nav class="tabs">' + tabs + '</nav>' +
       '<span class="spacer"></span>' +
-      '<div class="lang">' +
-        '<button class="lang-btn" id="langBtn">' + icon("globe", 15) + esc(cur.label) + icon("caret", 13) + '</button>' +
-        '<div class="lang-menu" id="langMenu">' + opts + '</div>' +
-      '</div>' +
+      langWidget +
     '</div></header>';
   }
 
@@ -121,8 +133,8 @@
 
   function pricing(t) {
     return '<main><section class="section"><div class="wrap">' +
-      '<div class="section-head"><h2>' + esc(t.pricing.title) + '</h2><p>' + esc(t.pricing.sub) + '</p></div>' +
-      '<div class="price-grid">' + plan(t, t.pricing.free, false) + plan(t, t.pricing.pro, true) + '</div>' +
+      '<div class="section-head center"><h2>' + esc(t.pricing.title) + '</h2><p>' + esc(t.pricing.sub) + '</p></div>' +
+      '<div class="price-grid price-grid--center">' + plan(t, t.pricing.free, false) + plan(t, t.pricing.pro, true) + '</div>' +
     '</div></section></main>';
   }
 
@@ -163,7 +175,13 @@
     '</footer>';
   }
 
-  var RENDER = { home: home, about: about, pricing: pricing, guides: guides };
+  /* ---------------- article page (install, guides detail, etc.) ---------------- */
+  function article(t) {
+    var el = document.getElementById("article-body");
+    return '<main class="article-main"><div class="article-wrap">' + (el ? el.innerHTML : "") + '</div></main>';
+  }
+
+  var RENDER = { home: home, about: about, pricing: pricing, guides: guides, article: article };
 
   function render() {
     var page = document.body.getAttribute("data-page") || "home";
