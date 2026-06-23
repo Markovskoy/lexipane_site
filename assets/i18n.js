@@ -80,8 +80,8 @@ window.LXP_I18N = {
     footer: {
       tagline: "A calm overlay for reading and learning from anything on screen.",
       product: "Product", legal: "Legal", connect: "Connect",
-      termsHref: "terms.html", privacyHref: "privacy.html", refundHref: "refund.html",
-      terms: "Terms and Conditions", privacy: "Privacy Policy", refund: "Refund Policy",
+      terms: "Terms and Conditions", privacy: "Privacy Policy", refund: "Refund Policy", eula: "EULA",
+      resources: "Resources", faq: "FAQ", changelog: "Changelog",
       telegram: "Telegram", youtube: "YouTube",
       rights: "© 2026 Lexipane. All rights reserved.",
     },
@@ -158,7 +158,8 @@ window.LXP_I18N = {
     footer: {
       tagline: "Спокойный оверлей для чтения и обучения из чего угодно на экране.",
       product: "Продукт", legal: "Правовое", connect: "Связь",
-      terms: "Условия использования", privacy: "Политика конфиденциальности", refund: "Политика возврата",
+      terms: "Условия использования", privacy: "Политика конфиденциальности", refund: "Политика возврата", eula: "EULA",
+      resources: "Материалы", faq: "FAQ", changelog: "История версий",
       telegram: "Telegram", youtube: "YouTube",
       rights: "© 2026 Lexipane. Все права защищены.",
     },
