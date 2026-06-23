@@ -164,12 +164,12 @@
         '<div><a class="brand" href="index.html"><img src="assets/logo/lexipane-icon.svg" width="28" height="28" alt=""/><b>Lexipane</b></a>' +
           '<p class="tag">' + esc(f.tagline) + '</p></div>' +
         col(f.product, [[t.nav.about, "about.html"], [t.nav.pricing, "pricing.html"], [t.nav.guides, "guides.html"]]) +
-        col(f.legal, [[f.terms, "terms.html"], [f.privacy, "privacy.html"], [f.refund, "refund.html"], [f.eula, "eula.html"]]) +
-        col(f.resources, [[f.faq, "faq.html"], [f.changelog, "changelog.html"]]) +
+        col(f.legal, [[f.terms, "legal/terms.html"], [f.privacy, "legal/privacy.html"], [f.refund, "legal/refund.html"], [f.eula, "legal/eula.html"]]) +
+        col(f.resources, [[f.faq, "pages/faq.html"], [f.changelog, "pages/changelog.html"]]) +
         col(f.connect, [[f.telegram, CFG.telegram], [f.youtube, CFG.youtube]]) +
       '</div>' +
       '<div class="foot-bar"><div class="wrap">' +
-        '<a href="terms.html">' + esc(f.terms) + '</a>' +
+        '<a href="legal/terms.html">' + esc(f.terms) + '</a>' +
         '<span>' + esc(f.rights) + '</span>' +
       '</div></div>' +
     '</footer>';

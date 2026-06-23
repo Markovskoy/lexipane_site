@@ -68,12 +68,12 @@ window.LXP_I18N = {
       title: "Guides",
       sub: "Short how-tos for setup and safe use.",
       items: [
-        { icon: "download", t: "How to install", d: "Windows & macOS setup, permissions, first run.", href: "install.html" },
+        { icon: "download", t: "How to install", d: "Windows & macOS setup, permissions, first run.", href: "guides/install.html" },
         { icon: "deck", t: "How to connect Anki", d: "AnkiConnect, deck mapping, note type.", href: "#" },
         { icon: "crop", t: "How to use screen capture", d: "Hotkeys, region select, OCR languages.", href: "#" },
         { icon: "history", t: "How Live Subtitles work", d: "Audio source, history, click-to-translate.", href: "#" },
         { icon: "shield", t: "Pro limits & safe use", d: "Credits, Game Freeze fairness, what's allowed.", href: "#" },
-        { icon: "doc", t: "FAQ", d: "Common questions, troubleshooting, refunds.", href: "faq.html" },
+        { icon: "doc", t: "FAQ", d: "Common questions, troubleshooting, refunds.", href: "pages/faq.html" },
       ],
     },
 
@@ -146,12 +146,12 @@ window.LXP_I18N = {
       title: "Инструкции",
       sub: "Короткие гайды по настройке и безопасному использованию.",
       items: [
-        { icon: "download", t: "Как установить", d: "Установка на Windows и macOS, разрешения, первый запуск.", href: "install.html" },
+        { icon: "download", t: "Как установить", d: "Установка на Windows и macOS, разрешения, первый запуск.", href: "guides/install.html" },
         { icon: "deck", t: "Как подключить Anki", d: "AnkiConnect, выбор колоды, тип заметки.", href: "#" },
         { icon: "crop", t: "Как пользоваться захватом", d: "Горячие клавиши, выбор области, языки OCR.", href: "#" },
         { icon: "history", t: "Как работают субтитры", d: "Источник звука, история, перевод по клику.", href: "#" },
         { icon: "shield", t: "Лимиты Pro и безопасность", d: "Кредиты, честность «Заморозки», что разрешено.", href: "#" },
-        { icon: "doc", t: "FAQ", d: "Частые вопросы, решение проблем, возвраты.", href: "faq.html" },
+        { icon: "doc", t: "FAQ", d: "Частые вопросы, решение проблем, возвраты.", href: "pages/faq.html" },
       ],
     },
 
