@@ -8,8 +8,10 @@ window.LXP_CONFIG = {
   // ---- Download links (e.g. your GitHub Releases assets) ----
   // Tip: a "latest release" asset URL looks like:
   //   https://github.com/<you>/<repo>/releases/latest/download/Lexipane-Setup.exe
-  downloadWindows: "https://github.com/Markovskoy/lexipane_site/releases/latest",
-  downloadMac:     "https://github.com/Markovskoy/lexipane_site/releases/latest",
+  // GitHub resolves /releases/latest/download/... to the newest release automatically.
+  // Both filenames are fixed — no need to update on each new version.
+  downloadWindows: "https://github.com/Markovskoy/lexipane_site/releases/latest/download/Lexipane-Setup.exe",
+  downloadMac:     "https://github.com/Markovskoy/lexipane_site/releases/latest/download/Lexipane-macOS.dmg",
 
   // ---- Social / community ----
   telegram: "https://t.me/your_channel",
