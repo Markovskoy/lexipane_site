@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<base href="../" />
+<title>Lexipane OCR and Game Freeze</title>
+<link rel="icon" href="assets/logo/favicon.png" />
+<link rel="stylesheet" href="assets/lexipane.css?v=3" />
+<link rel="stylesheet" href="assets/site.css?v=3" />
+</head>
+<body data-page="article" data-back="guides.html">
+<div id="article-body" style="display:none">
+  <h1>OCR and Game Freeze</h1>
+  <div class="article-meta">
+    <span class="article-tag">Windows</span>
+    <span class="article-tag">Experimental</span>
+    <span class="article-tag">Pro</span>
+    <span>Hardware · OCR · fair use</span>
+  </div>
+
+  <div class="article-note">
+    <strong>Hardware recommendation:</strong> Windows 10/11, 16 GB RAM, NVIDIA GPU for local OCR acceleration. CPU mode works, but recognition is slower. Game Freeze is experimental and should not be used with online games, anti-cheat games, launchers or browsers.
+  </div>
+
+  <p>On macOS, Lexipane hides OCR engine settings because the default capture flow is already configured. On Windows, OCR settings focus on one task: install/check local OCR acceleration for Pause + Read and Game Freeze.</p>
+
+  <img class="article-img" src="assets/guides/settings-runtime.jpg" alt="Lexipane runtime settings" />
+  <div class="article-img-caption">Runtime settings before the OCR cleanup pass.</div>
+
+  <h2>Recommended setup</h2>
+  <ol>
+    <li><span>Use the default OCR provider for normal screen capture.</span></li>
+    <li><span>For Game Freeze, enable the Pro feature and run the hardware check.</span></li>
+    <li><span>If NVIDIA is detected, install GPU OCR and restart Lexipane.</span></li>
+    <li><span>Keep allowlist/denylist conservative. Do not pause online or protected games.</span></li>
+  </ol>
+
+  <h2>Why this is Pro</h2>
+  <p>Game Freeze touches running processes and requires extra guardrails, support and testing. Lexipane should keep the user-facing control simple: enable the feature, install optional OCR acceleration, and show a clear warning when hardware is not suitable.</p>
+</div>
+<div id="app"></div>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

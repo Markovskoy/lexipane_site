@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<base href="../" />
+<title>Lexipane AI modes</title>
+<link rel="icon" href="assets/logo/favicon.png" />
+<link rel="stylesheet" href="assets/lexipane.css?v=3" />
+<link rel="stylesheet" href="assets/site.css?v=3" />
+</head>
+<body data-page="article" data-back="guides.html">
+<div id="article-body" style="display:none">
+  <h1>AI modes in Lexipane</h1>
+  <div class="article-meta">
+    <span class="article-tag">Pro</span>
+    <span class="article-tag">OpenAI</span>
+    <span class="article-tag">Without AI</span>
+    <span>Provider settings · credits · local fallback</span>
+  </div>
+
+  <p>Lexipane has two translation modes. Use <strong>OpenAI</strong> when you want grammar, nuance and context explanations. Use <strong>Without AI</strong> when you want a free fallback that starts with installed dictionaries and then uses the configured translator endpoint.</p>
+
+  <img class="article-img" src="assets/guides/settings-ai.jpg" alt="Lexipane AI settings" />
+  <div class="article-img-caption">Provider settings in the desktop app.</div>
+
+  <h2>OpenAI mode</h2>
+  <ul>
+    <li><strong>Best for:</strong> sentence explanations, grammar, idioms, phrasal verbs and context-aware cards.</li>
+    <li><strong>Requires:</strong> Pro access plus either Lexipane Cloud credits or your own OpenAI API key.</li>
+    <li><strong>Privacy:</strong> selected text is sent to the chosen AI provider only when you ask Lexipane to explain or generate content.</li>
+  </ul>
+
+  <h2>Without AI mode</h2>
+  <ul>
+    <li><strong>Best for:</strong> quick translation, offline dictionary lookups and basic Anki cards.</li>
+    <li><strong>Online fallback:</strong> can use Google Translate unofficial endpoint when enabled.</li>
+    <li><strong>Offline-only:</strong> disables web requests, but quality depends entirely on installed dictionary packs.</li>
+  </ul>
+
+  <h2>Credit rule</h2>
+  <p>Lexipane Cloud credits must be enforced on the server. The desktop app never stores the master OpenAI key and never creates OpenAI keys by itself. When credits run out, the app should show a top-up prompt or let you switch to your own key.</p>
+</div>
+<div id="app"></div>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
