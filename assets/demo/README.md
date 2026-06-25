@@ -9,8 +9,6 @@ is shown instead, so the site never looks broken while you record.
 | Home — hero (right side) | `hero.gif` |
 | About — capture a word from a web page → Anki | `capture-web.gif` |
 | About — capture text from inside a game | `capture-game.gif` |
-| About — Live Subtitles from English audio | `subtitles.gif` |
-| About — click a subtitle word → translation | `subtitle-click.gif` |
 | About — Game Freeze flow | `freeze.gif` |
 | About — settings & options | `settings.gif` |
 
