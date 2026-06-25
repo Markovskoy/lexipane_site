@@ -14,11 +14,11 @@ window.LXP_CONFIG = {
   downloadMac:     "https://github.com/Markovskoy/lexipane_site/releases/latest/download/Lexipane.dmg",
 
   // ---- Social / community ----
-  telegram: "https://t.me/your_channel",
+  telegram: "https://t.me/LexiPaneBot",
   youtube:  "https://youtube.com/@your_channel",
 
   // ---- Pro subscription button target (Telegram / Tribute / payment page) ----
-  proSubscribe: "https://t.me/your_channel",
+  proSubscribe: "https://t.me/LexiPaneBot?start=buy",
 
   // ---- System requirements line (shown in hero) ----
   systemRequirements: "Windows 10/11 · macOS 13+",

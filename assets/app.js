@@ -127,7 +127,7 @@
       '<div class="pname"><h3>' + esc(p.name) + '</h3>' + (p.badge ? '<span class="gl-badge">' + esc(p.badge) + '</span>' : "") + '</div>' +
       '<div class="pricerow"><span class="amt">' + esc(p.price) + '</span><span class="per">' + esc(p.per) + '</span></div>' +
       '<ul>' + lis + '</ul>' +
-      '<div style="display:block">' + cta.replace('class="gl-btn', 'style="width:100%" class="gl-btn') + '</div>' +
+      '<div class="plan-cta">' + cta.replace('class="gl-btn', 'style="width:100%" class="gl-btn') + '</div>' +
     '</div>';
   }
 
