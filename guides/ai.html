@@ -19,16 +19,23 @@
     <span>Provider settings · credits · local fallback</span>
   </div>
 
-  <p>Lexipane has two translation modes. Use <strong>OpenAI</strong> when you want grammar, nuance and context explanations. Use <strong>Without AI</strong> when you want a free fallback that starts with installed dictionaries and then uses the configured translator endpoint.</p>
+  <p>Lexipane has three AI paths. <strong>Lexipane Cloud</strong> uses Pro credits through the Lexipane backend. <strong>OpenAI with your own key</strong> connects directly from your computer and is billed by OpenAI to your account. <strong>Without AI</strong> uses dictionaries and translator fallback without an LLM provider.</p>
 
   <img class="article-img" src="assets/guides/settings-ai.jpg" alt="Lexipane AI settings" />
   <div class="article-img-caption">Provider settings in the desktop app.</div>
 
-  <h2>OpenAI mode</h2>
+  <h2>Lexipane Cloud</h2>
   <ul>
-    <li><strong>Best for:</strong> sentence explanations, grammar, idioms, phrasal verbs and context-aware cards.</li>
-    <li><strong>Requires:</strong> Pro access plus either Lexipane Cloud credits or your own OpenAI API key.</li>
-    <li><strong>Privacy:</strong> selected text is sent to the chosen AI provider only when you ask Lexipane to explain or generate content.</li>
+    <li><strong>Best for:</strong> Pro users who want AI explanations without managing an OpenAI key.</li>
+    <li><strong>Credits:</strong> the monthly allowance is counted on the backend by actual model usage. When credits run out, Cloud AI pauses until renewal or top-up.</li>
+    <li><strong>Privacy:</strong> selected text is sent to the Lexipane backend, then to OpenAI. The desktop app never contains the master OpenAI key.</li>
+  </ul>
+
+  <h2>OpenAI with your own key</h2>
+  <ul>
+    <li><strong>Best for:</strong> unlimited personal usage under your own OpenAI billing limits.</li>
+    <li><strong>Billing:</strong> requests go directly from your computer to OpenAI and do not spend Lexipane Cloud credits.</li>
+    <li><strong>Connection:</strong> your network must be able to reach OpenAI servers. If OpenAI is unavailable in your region, use a VPN or switch to Without AI.</li>
   </ul>
 
   <h2>Without AI mode</h2>
@@ -39,7 +46,7 @@
   </ul>
 
   <h2>Credit rule</h2>
-  <p>Lexipane Cloud credits must be enforced on the server. The desktop app never stores the master OpenAI key and never creates OpenAI keys by itself. When credits run out, the app should show a top-up prompt or let you switch to your own key.</p>
+  <p>Lexipane Cloud credits are enforced on the server. The desktop app never stores the master OpenAI key and never creates OpenAI keys by itself. If the backend or OpenAI is unavailable, Lexipane shows a connection message and you can retry later, enable VPN, switch to your own key, or use Without AI.</p>
 </div>
 <div id="app"></div>
 <script src="assets/config.js"></script>
