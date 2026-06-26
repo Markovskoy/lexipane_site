@@ -1,84 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lexipane — Changelog</title>
-<link rel="icon" href="../assets/logo/favicon.png" />
-<link rel="stylesheet" href="../assets/lexipane.css" />
-<link rel="stylesheet" href="../assets/site.css" />
-<style>
-  .cl-wrap { max-width: 760px; margin: 0 auto; padding: 52px 28px 90px; }
-  .cl-wrap h1 { font: var(--text-display); font-size: 40px; letter-spacing: -0.035em; margin: 0 0 8px; }
-  .cl-wrap .sub { font: var(--text-body); color: var(--text-muted); margin: 0 0 48px; }
-  .cl-release { margin-bottom: 40px; }
-  .cl-tag { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 4px; }
-  .cl-version { font: var(--text-h2); font-size: 22px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; }
-  .cl-date { font: var(--text-sm); color: var(--text-faint); }
-  .cl-items { list-style: none; padding: 0; margin: 12px 0 0; }
-  .cl-items li { font: var(--text-body); font-size: 15px; color: var(--text-muted); line-height: 1.6; padding: 4px 0 4px 20px; position: relative; }
-  .cl-items li::before { content: "–"; position: absolute; left: 0; color: var(--accent); }
-  .cl-label { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-left: 6px; vertical-align: middle; text-transform: uppercase; }
-  .cl-label.new { background: var(--accent-faint, rgba(139,92,246,0.18)); color: var(--accent); }
-  .cl-label.fix { background: rgba(34,197,94,0.15); color: #4ade80; }
-  .cl-label.change { background: rgba(251,191,36,0.15); color: #fbbf24; }
-  .backlink { display: inline-flex; align-items: center; gap: 6px; }
-</style>
+<base href="../" />
+<title>Lexipane changelog</title>
+<link rel="icon" href="assets/logo/favicon.png" />
+<link rel="stylesheet" href="assets/lexipane.css?v=4" />
+<link rel="stylesheet" href="assets/site.css?v=4" />
 </head>
-<body data-page="changelog">
-<div class="glow"></div>
-<header class="site-head"><div class="wrap">
-  <a class="brand" href="../index.html"><img src="../assets/logo/lexipane-icon.svg" width="30" height="30" alt="Lexipane"/><b>Lexipane</b></a>
-  <span class="spacer"></span>
-  <a class="tab backlink" href="../index.html">← Back to site</a>
-</div></header>
-
-<main class="cl-wrap">
-  <h1>Changelog</h1>
-  <p class="sub">Release history. Download links are on the <a href="https://github.com/Markovskoy/lexipane_site/releases">Releases page</a>.</p>
-
-  <div class="cl-release">
-    <div class="cl-tag">
-      <span class="cl-version">v0.4.0</span>
-      <span class="cl-date">June 2026 · current</span>
-    </div>
-    <ul class="cl-items">
-      <li>Universal desktop overlay positioning — works with articles, books, games, PDFs, and more <span class="cl-label change">change</span></li>
-      <li>Free / Pro plan model with license key activation <span class="cl-label new">new</span></li>
-      <li>Plan settings tab: activate key, view credits, upgrade link <span class="cl-label new">new</span></li>
-      <li>Design system foundation: tokens, theme manager, reusable components <span class="cl-label new">new</span></li>
-      <li>Four themes: Decepticon Purple, Midnight, Aurora, Paper <span class="cl-label new">new</span></li>
-      <li>Build scripts reorganised into <code>build/</code> folder <span class="cl-label change">change</span></li>
-      <li>Local deploy scripts: <code>deploy/deploy_macos.sh</code>, <code>deploy/deploy_windows.bat</code> <span class="cl-label new">new</span></li>
-      <li>Version derived from git branch name (<code>release/vX.X.X</code>) <span class="cl-label new">new</span></li>
-      <li>Public site launched at GitHub Pages <span class="cl-label new">new</span></li>
-      <li>Terms, Privacy, Refund, EULA, FAQ pages published <span class="cl-label new">new</span></li>
-    </ul>
-  </div>
-
-  <div class="cl-release">
-    <div class="cl-tag">
-      <span class="cl-version">v0.3.x</span>
-      <span class="cl-date">May–June 2026</span>
-    </div>
-    <ul class="cl-items">
-      <li>Renamed from GameLingo to Lexipane <span class="cl-label change">change</span></li>
-      <li>OCR improvements: Google Lens integration, macOS native fallback <span class="cl-label new">new</span></li>
-      <li>Rich word popup: lemma, IPA, POS, frequency band, context sentence <span class="cl-label new">new</span></li>
-      <li>Quality pipeline for word analysis routing <span class="cl-label new">new</span></li>
-      <li>NoAI provider — dictionary and translate APIs, no LLM key needed <span class="cl-label new">new</span></li>
-      <li>Anki export with note type auto-creation <span class="cl-label new">new</span></li>
-      <li>Local dictionary support (installed on demand) <span class="cl-label new">new</span></li>
-      <li>Windows portable build and Inno Setup installer <span class="cl-label new">new</span></li>
-      <li>macOS DMG build via PyInstaller <span class="cl-label new">new</span></li>
-    </ul>
-  </div>
-
-</main>
-
-<footer class="site-foot"><div class="foot-bar"><div class="wrap">
-  <a href="../legal/terms.html">Terms and Conditions</a>
-  <span>© 2026 Lexipane. All rights reserved.</span>
-</div></div></footer>
+<body data-page="article" data-back="index.html">
+<div id="article-body-en" data-article-lang="en" style="display:none">
+<h1>Changelog</h1><div class="article-meta"><span>Release history. Download links live on the GitHub Releases page.</span></div>
+  <h2>v0.4.x · June 2026</h2><ul><li>Universal desktop overlay positioning for articles, books, games, PDFs and more.</li><li>Free / Pro plan model with license key activation foundation.</li><li>Plan settings tab: activate key, view credits and upgrade link.</li><li>Design system foundation: tokens, theme manager and reusable components.</li><li>Public site, legal pages, FAQ, guides and release download surface.</li><li>Live subtitles work: system audio capture, local Whisper, translation and overlay UX improvements.</li></ul>
+  <h2>v0.3.x · May-June 2026</h2><ul><li>Renamed from GameLingo to Lexipane.</li><li>OCR improvements: Google Lens integration and macOS native fallback.</li><li>Rich word popup: lemma, IPA, POS, frequency band and context sentence.</li><li>NoAI provider, local dictionary support and Anki export improvements.</li><li>Windows portable build and macOS DMG build via PyInstaller.</li></ul>
+</div>
+<div id="article-body-ru" data-article-lang="ru" style="display:none">
+<h1>История версий</h1><div class="article-meta"><span>История релизов. Ссылки на скачивание находятся на GitHub Releases.</span></div>
+  <h2>v0.4.x · июнь 2026</h2><ul><li>Universal desktop overlay positioning для статей, книг, игр, PDF и других окон.</li><li>Модель Free / Pro и foundation для license key activation.</li><li>Plan settings tab: активация ключа, кредиты и upgrade link.</li><li>Design system foundation: tokens, theme manager и reusable components.</li><li>Public site, legal pages, FAQ, guides и release download surface.</li><li>Live subtitles: system audio capture, local Whisper, translation и улучшения overlay UX.</li></ul>
+  <h2>v0.3.x · май-июнь 2026</h2><ul><li>Переименование из GameLingo в Lexipane.</li><li>OCR improvements: Google Lens integration и macOS native fallback.</li><li>Rich word popup: lemma, IPA, POS, frequency band и context sentence.</li><li>NoAI provider, local dictionary support и улучшенный Anki export.</li><li>Windows portable build и macOS DMG build через PyInstaller.</li></ul>
+</div>
+<div id="app"></div>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/app.js"></script>
 </body>
 </html>

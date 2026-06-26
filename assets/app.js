@@ -41,7 +41,9 @@
 
     if (page === "article") {
       var backHref = document.body.getAttribute("data-back") || "guides.html";
-      var backLabel = lang() === "ru" ? "← Инструкции" : "← Guides";
+      var backLabel = backHref === "index.html"
+        ? (lang() === "ru" ? "← Главная" : "← Home")
+        : (lang() === "ru" ? "← Инструкции" : "← Guides");
       return '<header class="site-head"><div class="wrap">' +
         '<a class="brand" href="index.html"><img src="assets/logo/lexipane-icon.svg" width="30" height="30" alt="Lexipane"/><b>Lexipane</b></a>' +
         '<a class="tab" href="' + backHref + '">' + backLabel + '</a>' +
@@ -177,7 +179,10 @@
 
   /* ---------------- article page (install, guides detail, etc.) ---------------- */
   function article(t) {
-    var el = document.getElementById("article-body");
+    var cur = lang();
+    var el = document.querySelector('[data-article-lang="' + cur + '"]') ||
+      document.querySelector('[data-article-lang="en"]') ||
+      document.getElementById("article-body");
     return '<main class="article-main"><div class="article-wrap">' + (el ? el.innerHTML : "") + '</div></main>';
   }
 

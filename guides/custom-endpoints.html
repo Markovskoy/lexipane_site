@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<base href="../" />
+<title>Lexipane custom LLM endpoints</title>
+<link rel="icon" href="assets/logo/favicon.png" />
+<link rel="stylesheet" href="assets/lexipane.css?v=4" />
+<link rel="stylesheet" href="assets/site.css?v=4" />
+</head>
+<body data-page="article" data-back="guides.html">
+<div id="article-body-en" data-article-lang="en" style="display:none">
+<h1>Custom LLM endpoints</h1>
+  <div class="article-meta"><span class="article-tag">Advanced</span><span class="article-tag">OpenAI-compatible</span><span>Local server · base URL · validation</span></div>
+  <p>Custom endpoints are for users who already run their own model gateway, local server, or OpenAI-compatible API. This mode is separate from Lexipane Cloud billing: requests go from your computer to the endpoint you configure.</p>
+  <h2>What to enter</h2>
+  <ul><li><strong>Base URL:</strong> an HTTPS OpenAI-compatible base URL such as <code>https://example.com/v1</code>, or a local URL such as <code>http://127.0.0.1:11434/v1</code>.</li><li><strong>API key:</strong> the token required by your endpoint. Local servers may allow an empty or dummy value.</li><li><strong>Model name:</strong> the exact model id exposed by your server.</li></ul>
+  <h2>Validation before saving</h2>
+  <p>Lexipane should test the endpoint with a small request before saving it. If validation fails, the settings screen should explain whether the URL is unreachable, the key is rejected, the model is missing, or the response is not OpenAI-compatible.</p>
+  <h2>Privacy boundary</h2>
+  <p>In custom endpoint mode, captured text is sent only to the endpoint you configured. It does not use Lexipane Cloud credits and does not go through the Lexipane backend unless you deliberately enter a Lexipane backend URL yourself.</p>
+  <h2>Good local candidates</h2>
+  <ul><li>Local OpenAI-compatible gateways.</li><li>Self-hosted model servers on your LAN.</li><li>Company proxy endpoints that expose chat completions with OpenAI-compatible request and response shapes.</li></ul>
+</div>
+<div id="article-body-ru" data-article-lang="ru" style="display:none">
+<h1>Свои LLM endpoints</h1>
+  <div class="article-meta"><span class="article-tag">Advanced</span><span class="article-tag">OpenAI-compatible</span><span>Локальный сервер · base URL · проверка</span></div>
+  <p>Custom endpoints нужны пользователям, у которых уже есть свой model gateway, локальный сервер или OpenAI-compatible API. Этот режим отделен от биллинга Lexipane Cloud: запросы идут с вашего компьютера на endpoint, который вы указали.</p>
+  <h2>Что указывать</h2>
+  <ul><li><strong>Base URL:</strong> HTTPS OpenAI-compatible base URL вроде <code>https://example.com/v1</code> или локальный URL вроде <code>http://127.0.0.1:11434/v1</code>.</li><li><strong>API key:</strong> токен, который требует ваш endpoint. Локальные серверы иногда допускают пустое или dummy-значение.</li><li><strong>Model name:</strong> точный id модели, который отдает ваш сервер.</li></ul>
+  <h2>Проверка перед сохранением</h2>
+  <p>Lexipane должен отправлять маленький тестовый запрос до сохранения настроек. Если проверка не прошла, экран настроек должен объяснить причину: URL недоступен, key отклонен, модель не найдена или ответ не похож на OpenAI-compatible API.</p>
+  <h2>Граница приватности</h2>
+  <p>В custom endpoint режиме захваченный текст отправляется только на endpoint, который вы настроили. Он не тратит кредиты Lexipane Cloud и не идет через backend Lexipane, если вы сами не указали backend Lexipane как URL.</p>
+  <h2>Хорошие локальные варианты</h2>
+  <ul><li>Локальные OpenAI-compatible gateways.</li><li>Self-hosted model servers в вашей локальной сети.</li><li>Корпоративные proxy endpoints, которые поддерживают chat completions в OpenAI-compatible формате.</li></ul>
+</div>
+<div id="app"></div>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

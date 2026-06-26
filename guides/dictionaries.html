@@ -6,38 +6,31 @@
 <base href="../" />
 <title>Lexipane offline dictionaries</title>
 <link rel="icon" href="assets/logo/favicon.png" />
-<link rel="stylesheet" href="assets/lexipane.css?v=3" />
-<link rel="stylesheet" href="assets/site.css?v=3" />
+<link rel="stylesheet" href="assets/lexipane.css?v=4" />
+<link rel="stylesheet" href="assets/site.css?v=4" />
 </head>
 <body data-page="article" data-back="guides.html">
-<div id="article-body" style="display:none">
-  <h1>Offline dictionaries</h1>
-  <div class="article-meta">
-    <span class="article-tag">Free</span>
-    <span class="article-tag">FreeDict</span>
-    <span>Local packs · fallback quality · language coverage</span>
-  </div>
-
+<div id="article-body-en" data-article-lang="en" style="display:none">
+<h1>Offline dictionaries</h1>
+  <div class="article-meta"><span class="article-tag">Free</span><span class="article-tag">FreeDict</span><span>Local packs · fallback quality · language coverage</span></div>
   <p>Offline packs are downloaded from FreeDict and stored in app data. Lexipane checks local packs before the online translator, so common words can work without AI and without sending a request.</p>
-
   <img class="article-img" src="assets/guides/settings-dictionaries.jpg" alt="Lexipane dictionary settings" />
   <div class="article-img-caption">Installed dictionary packs are shown in Settings.</div>
-
-  <h2>Coverage</h2>
-  <p>Current app languages are Russian, English, German, French, Spanish, Italian, Portuguese, Japanese, Korean, Chinese and Vietnamese. FreeDict does not provide every pair.</p>
-  <ul>
-    <li><strong>Good coverage:</strong> English, Russian, German, French, Spanish, Italian and Portuguese pairs.</li>
-    <li><strong>Partial coverage:</strong> Japanese has useful packs for English/German/French/Russian directions, but not every pair.</li>
-    <li><strong>Very limited:</strong> Chinese has packs for a few directions only.</li>
-    <li><strong>No FreeDict pack found:</strong> Korean and Vietnamese pairs in the current language list.</li>
-  </ul>
-
-  <h2>Asian languages</h2>
-  <p>Japanese, Korean and Chinese need real word segmentation. LunaTranslator uses MeCab/UniDic for Japanese and Jieba/Pinyin for Chinese; those are good optional-pack candidates, but they are too heavy to bundle silently. Until an analyzer pack is added, use online translation or AI for best quality on Japanese and Korean.</p>
-
-  <h2>Google fallback</h2>
-  <img class="article-img" src="assets/guides/settings-google.jpg" alt="Lexipane Google fallback settings" />
-  <p>When online mode is enabled, Lexipane can fall back to the Google Translate unofficial endpoint. Rate-limit protection is enabled to avoid temporary 429/403 blocks.</p>
+  <h2>Coverage</h2><p>Current app languages are Russian, English, German, French, Spanish, Italian, Portuguese, Japanese, Korean, Chinese and Vietnamese. FreeDict does not provide every pair.</p>
+  <ul><li><strong>Good coverage:</strong> English, Russian, German, French, Spanish, Italian and Portuguese pairs.</li><li><strong>Partial coverage:</strong> Japanese has useful packs for English/German/French/Russian directions, but not every pair.</li><li><strong>Very limited:</strong> Chinese has packs for a few directions only.</li><li><strong>No FreeDict pack found:</strong> Korean and Vietnamese pairs in the current language list.</li></ul>
+  <h2>Asian languages</h2><p>Japanese, Korean and Chinese need real word segmentation. LunaTranslator uses MeCab/UniDic for Japanese and Jieba/Pinyin for Chinese; those are good optional-pack candidates, but they are too heavy to bundle silently. Until an analyzer pack is added, use online translation or AI for best quality on Japanese and Korean.</p>
+  <h2>Google fallback</h2><img class="article-img" src="assets/guides/settings-google.jpg" alt="Lexipane Google fallback settings" /><p>When online mode is enabled, Lexipane can fall back to the Google Translate unofficial endpoint. Rate-limit protection is enabled to avoid temporary 429/403 blocks.</p>
+</div>
+<div id="article-body-ru" data-article-lang="ru" style="display:none">
+<h1>Офлайн-словари</h1>
+  <div class="article-meta"><span class="article-tag">Free</span><span class="article-tag">FreeDict</span><span>Локальные паки · качество fallback · покрытие языков</span></div>
+  <p>Офлайн-паки скачиваются из FreeDict и хранятся в данных приложения. Lexipane сначала проверяет локальные словари, поэтому частые слова могут работать без AI и без отправки запроса.</p>
+  <img class="article-img" src="assets/guides/settings-dictionaries.jpg" alt="Настройки словарей Lexipane" />
+  <div class="article-img-caption">Установленные словарные паки показываются в Settings.</div>
+  <h2>Покрытие</h2><p>Текущие языки приложения: русский, английский, немецкий, французский, испанский, итальянский, португальский, японский, корейский, китайский и вьетнамский. FreeDict покрывает не все пары.</p>
+  <ul><li><strong>Хорошее покрытие:</strong> пары с английским, русским, немецким, французским, испанским, итальянским и португальским.</li><li><strong>Частичное покрытие:</strong> для японского есть полезные паки в направлениях с английским/немецким/французским/русским, но не все пары.</li><li><strong>Очень ограниченно:</strong> для китайского есть только несколько направлений.</li><li><strong>FreeDict-пак не найден:</strong> корейский и вьетнамский в текущем списке языков.</li></ul>
+  <h2>Азиатские языки</h2><p>Японскому, корейскому и китайскому нужна настоящая сегментация слов. LunaTranslator использует MeCab/UniDic для японского и Jieba/Pinyin для китайского; это хорошие кандидаты для optional-pack, но они слишком тяжелые для тихой поставки. Пока analyzer-pack не добавлен, для японского и корейского лучше использовать online translation или AI.</p>
+  <h2>Google fallback</h2><img class="article-img" src="assets/guides/settings-google.jpg" alt="Настройки Google fallback в Lexipane" /><p>Когда online mode включен, Lexipane может использовать неофициальный endpoint Google Translate как fallback. Rate-limit защита нужна, чтобы избегать временных 429/403 блокировок.</p>
 </div>
 <div id="app"></div>
 <script src="assets/config.js"></script>

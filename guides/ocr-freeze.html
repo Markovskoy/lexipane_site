@@ -6,38 +6,27 @@
 <base href="../" />
 <title>Lexipane OCR and Game Freeze</title>
 <link rel="icon" href="assets/logo/favicon.png" />
-<link rel="stylesheet" href="assets/lexipane.css?v=3" />
-<link rel="stylesheet" href="assets/site.css?v=3" />
+<link rel="stylesheet" href="assets/lexipane.css?v=4" />
+<link rel="stylesheet" href="assets/site.css?v=4" />
 </head>
 <body data-page="article" data-back="guides.html">
-<div id="article-body" style="display:none">
-  <h1>OCR and Game Freeze</h1>
-  <div class="article-meta">
-    <span class="article-tag">Windows</span>
-    <span class="article-tag">Experimental</span>
-    <span class="article-tag">Pro</span>
-    <span>Hardware · OCR · fair use</span>
-  </div>
-
-  <div class="article-note">
-    <strong>Hardware recommendation:</strong> Windows 10/11, 16 GB RAM, NVIDIA GPU for local OCR acceleration. CPU mode works, but recognition is slower. Game Freeze is experimental and should not be used with online games, anti-cheat games, launchers or browsers.
-  </div>
-
+<div id="article-body-en" data-article-lang="en" style="display:none">
+<h1>OCR and Game Freeze</h1>
+  <div class="article-meta"><span class="article-tag">Windows</span><span class="article-tag">Experimental</span><span class="article-tag">Pro</span><span>Hardware · OCR · fair use</span></div>
+  <div class="article-note"><strong>Hardware recommendation:</strong> Windows 10/11, 16 GB RAM, NVIDIA GPU for local OCR acceleration. CPU mode works, but recognition is slower. Game Freeze is experimental and should not be used with online games, anti-cheat games, launchers or browsers.</div>
   <p>On macOS, Lexipane hides OCR engine settings because the default capture flow is already configured. On Windows, OCR settings focus on one task: install/check local OCR acceleration for Pause + Read and Game Freeze.</p>
-
-  <img class="article-img" src="assets/guides/settings-runtime.jpg" alt="Lexipane runtime settings" />
-  <div class="article-img-caption">Runtime settings before the OCR cleanup pass.</div>
-
-  <h2>Recommended setup</h2>
-  <ol>
-    <li><span>Use the default OCR provider for normal screen capture.</span></li>
-    <li><span>For Game Freeze, enable the Pro feature and run the hardware check.</span></li>
-    <li><span>If NVIDIA is detected, install GPU OCR and restart Lexipane.</span></li>
-    <li><span>Keep allowlist/denylist conservative. Do not pause online or protected games.</span></li>
-  </ol>
-
-  <h2>Why this is Pro</h2>
-  <p>Game Freeze touches running processes and requires extra guardrails, support and testing. Lexipane should keep the user-facing control simple: enable the feature, install optional OCR acceleration, and show a clear warning when hardware is not suitable.</p>
+  <img class="article-img" src="assets/guides/settings-runtime.jpg" alt="Lexipane runtime settings" /><div class="article-img-caption">Runtime settings before the OCR cleanup pass.</div>
+  <h2>Recommended setup</h2><ol><li><span>Use the default OCR provider for normal screen capture.</span></li><li><span>For Game Freeze, enable the Pro feature and run the hardware check.</span></li><li><span>If NVIDIA is detected, install GPU OCR and restart Lexipane.</span></li><li><span>Keep allowlist/denylist conservative. Do not pause online or protected games.</span></li></ol>
+  <h2>Why this is Pro</h2><p>Game Freeze touches running processes and requires extra guardrails, support and testing. Lexipane should keep the user-facing control simple: enable the feature, install optional OCR acceleration, and show a clear warning when hardware is not suitable.</p>
+</div>
+<div id="article-body-ru" data-article-lang="ru" style="display:none">
+<h1>OCR и Game Freeze</h1>
+  <div class="article-meta"><span class="article-tag">Windows</span><span class="article-tag">Experimental</span><span class="article-tag">Pro</span><span>Железо · OCR · честное использование</span></div>
+  <div class="article-note"><strong>Рекомендации по железу:</strong> Windows 10/11, 16 GB RAM, NVIDIA GPU для локального ускорения OCR. CPU mode работает, но распознавание будет медленнее. Game Freeze экспериментален и не должен использоваться с online games, anti-cheat games, launchers или browsers.</div>
+  <p>На macOS Lexipane скрывает настройки OCR engine, потому что стандартный capture flow уже настроен. На Windows OCR settings решают одну задачу: установить/проверить локальное OCR-ускорение для Pause + Read и Game Freeze.</p>
+  <img class="article-img" src="assets/guides/settings-runtime.jpg" alt="Runtime settings Lexipane" /><div class="article-img-caption">Runtime settings до cleanup-прохода по OCR.</div>
+  <h2>Рекомендуемая настройка</h2><ol><li><span>Используйте default OCR provider для обычного screen capture.</span></li><li><span>Для Game Freeze включите Pro feature и запустите hardware check.</span></li><li><span>Если NVIDIA обнаружена, установите GPU OCR и перезапустите Lexipane.</span></li><li><span>Держите allowlist/denylist консервативными. Не ставьте на паузу online или protected games.</span></li></ol>
+  <h2>Почему это Pro</h2><p>Game Freeze трогает running processes и требует дополнительных guardrails, поддержки и тестирования. Пользовательский control должен быть простым: включить feature, установить optional OCR acceleration и увидеть ясное предупреждение, если железо не подходит.</p>
 </div>
 <div id="app"></div>
 <script src="assets/config.js"></script>

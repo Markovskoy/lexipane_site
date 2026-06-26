@@ -67,6 +67,7 @@ window.LXP_I18N = {
       items: [
         { icon: "download", t: "How to install", d: "Windows & macOS setup, permissions, first run.", href: "guides/install.html" },
         { icon: "brain", t: "AI modes", d: "OpenAI, Without AI, Pro labels and credit rules.", href: "guides/ai.html" },
+        { icon: "sparkle", t: "Custom LLM endpoints", d: "OpenAI-compatible base URLs, local servers, validation and privacy boundaries.", href: "guides/custom-endpoints.html" },
         { icon: "doc", t: "Offline dictionaries", d: "FreeDict packs, missing language pairs and CJK notes.", href: "guides/dictionaries.html" },
         { icon: "shield", t: "OCR & Game Freeze", d: "Hardware, CUDA OCR setup and safe game use.", href: "guides/ocr-freeze.html" },
         { icon: "deck", t: "Pro access & billing", d: "Telegram keys, monthly AI credits and top-ups.", href: "guides/pro-billing.html" },
@@ -142,6 +143,7 @@ window.LXP_I18N = {
       items: [
         { icon: "download", t: "Как установить", d: "Установка на Windows и macOS, разрешения, первый запуск.", href: "guides/install.html" },
         { icon: "brain", t: "AI-режимы", d: "OpenAI, Without AI, Pro-метки и правила кредитов.", href: "guides/ai.html" },
+        { icon: "sparkle", t: "Свои LLM endpoints", d: "OpenAI-compatible base URL, локальный сервер, проверка и границы приватности.", href: "guides/custom-endpoints.html" },
         { icon: "doc", t: "Офлайн-словари", d: "Паки FreeDict, пропущенные языковые пары и CJK-заметки.", href: "guides/dictionaries.html" },
         { icon: "shield", t: "OCR и Game Freeze", d: "Железо, CUDA OCR и безопасное использование в играх.", href: "guides/ocr-freeze.html" },
         { icon: "deck", t: "Pro-доступ и оплата", d: "Telegram-ключи, месячные AI-кредиты и пополнения.", href: "guides/pro-billing.html" },

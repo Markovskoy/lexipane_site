@@ -4,112 +4,40 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <base href="../" />
-<title>Установка Lexipane — Windows и macOS</title>
+<title>Lexipane install guide</title>
 <link rel="icon" href="assets/logo/favicon.png" />
-<link rel="stylesheet" href="assets/lexipane.css?v=2" />
-<link rel="stylesheet" href="assets/site.css?v=2" />
+<link rel="stylesheet" href="assets/lexipane.css?v=4" />
+<link rel="stylesheet" href="assets/site.css?v=4" />
 </head>
 <body data-page="article" data-back="guides.html">
-
-<!-- Article content — edit this section to update the guide -->
-<div id="article-body" style="display:none">
-  <h1>Установка Lexipane</h1>
-  <div class="article-meta">
-    <span class="article-tag">Windows</span>
-    <span class="article-tag">macOS</span>
-    <span>Установка · Разрешения · Первый запуск</span>
-  </div>
-
-  <!-- ── Windows ── -->
-  <h2>
-    <span class="article-os-badge">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M3 5.5L11 4v7H3V5.5zm0 13L11 20v-7H3v5.5zm9-13.3L21 4v7h-9V5.2zm0 8.3h9v7L12 20v-6.5z"/>
-      </svg>
-      Windows
-    </span>
-  </h2>
+<div id="article-body-en" data-article-lang="en" style="display:none">
+<h1>Install Lexipane</h1>
+  <div class="article-meta"><span class="article-tag">Windows</span><span class="article-tag">macOS</span><span>Install · permissions · first run</span></div>
+  <h2><span class="article-os-badge">Windows</span></h2>
   <p class="article-os-sub">Windows 10 / 11 · 64-bit</p>
-
-  <ol>
-    <li><span>
-      <strong>Скачайте установщик</strong> — нажмите кнопку «Скачать для Windows» на главной странице,
-      сохраните файл <code>Lexipane.exe</code>.
-    </span></li>
-    <li><span>
-      <strong>Запустите установщик.</strong> Если Windows SmartScreen показывает предупреждение —
-      нажмите <strong>«Подробнее» → «Выполнить в любом случае»</strong>.
-    </span></li>
-    <li><span>
-      Следуйте шагам установщика. После завершения запустите Lexipane из меню Пуск или с рабочего стола.
-    </span></li>
-    <li><span>
-      При первом запуске пройдите быструю настройку — выберите языки и режим перевода.
-    </span></li>
-  </ol>
-
-  <div class="article-note">
-    <strong>Антивирусы:</strong> некоторые антивирусы могут ложно срабатывать на установщик.
-    Это ложное срабатывание — Lexipane не содержит вредоносного кода.
-    Добавьте папку установки в исключения, если возникают предупреждения.
-  </div>
-
-  <!-- ── macOS ── -->
-  <h2>
-    <span class="article-os-badge">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-      </svg>
-      macOS
-    </span>
-  </h2>
-  <p class="article-os-sub">macOS 13 Ventura и новее</p>
-
-  <ol>
-    <li><span>
-      <strong>Скачайте DMG</strong> — нажмите кнопку «Скачать для macOS» на главной странице.
-    </span></li>
-    <li><span>
-      Откройте скачанный файл <code>.dmg</code>.
-      <strong>Перетащите Lexipane.app в папку Applications.</strong>
-    </span></li>
-    <li><span>
-      Откройте <strong>Terminal</strong> (Finder → Программы → Утилиты → Terminal) и выполните команду:
-      <br/><br/>
-      <code>xattr -dr com.apple.quarantine /Applications/Lexipane.app</code>
-      <br/><br/>
-      Это снимает карантинный флаг macOS, после чего приложение откроется без предупреждений.
-    </span></li>
-    <li><span>
-      macOS попросит три разрешения — нажмите <strong>«OK»</strong> на каждое:
-      <ul style="margin-top:10px">
-        <li><strong>Специальные возможности</strong> (Accessibility)</li>
-        <li><strong>Мониторинг ввода</strong> (Input Monitoring)</li>
-        <li><strong>Запись экрана</strong> (Screen Recording)</li>
-      </ul>
-    </span></li>
-  </ol>
-
-  <div class="article-note">
-    <strong>Разрешения запрашиваются один раз</strong> — при последующих обновлениях повторно давать их не нужно.
-    Если разрешение не было выдано при первом запуске, откройте
-    <strong>Системные настройки → Конфиденциальность и безопасность</strong> и включите там вручную.
-  </div>
-
-  <!-- ── First run ── -->
-  <h2>Первый запуск</h2>
-
-  <p>
-    После установки нажмите хоткей захвата (по умолчанию <code>Ctrl+Shift+F</code> на Windows /
-    <code>⌃⇧F</code> на Mac), выделите область с текстом — Lexipane покажет перевод во всплывающем окне.
-  </p>
-
-  <p>
-    В настройках выберите языки перевода и источник переводов. Для режима с AI-переводом потребуется
-    ключ API или подписка Pro.
-  </p>
+  <ol><li><span><strong>Download the installer</strong> from the main page and save <code>Lexipane.exe</code>.</span></li><li><span><strong>Run the installer.</strong> If SmartScreen warns you, choose <strong>More info -> Run anyway</strong>.</span></li><li><span>Finish the installer and launch Lexipane from Start Menu or Desktop.</span></li><li><span>On first run, choose your languages and translation mode.</span></li></ol>
+  <div class="article-note"><strong>Antivirus warning:</strong> unsigned or fresh installers can trigger false positives. Lexipane does not contain malware; add the install folder to exclusions if needed.</div>
+  <h2><span class="article-os-badge">macOS</span></h2>
+  <p class="article-os-sub">macOS 13 Ventura or newer</p>
+  <ol><li><span><strong>Download the DMG</strong> from the main page.</span></li><li><span>Open it and drag <code>Lexipane.app</code> into <code>Applications</code>.</span></li><li><span>For the first launch, right-click the app in Finder and choose <strong>Open</strong>.</span></li><li><span>Approve Accessibility, Input Monitoring and Screen Recording permissions.</span></li></ol>
+  <div class="article-note"><strong>If Gatekeeper blocks the app:</strong> run <code>xattr -dr com.apple.quarantine /Applications/Lexipane.app</code>, then launch again from Finder.</div>
+  <h2>First capture</h2>
+  <p>Press the capture hotkey, select a screen area with text, and Lexipane will show translation in an overlay. Then adjust languages and provider mode in Settings.</p>
 </div>
-
+<div id="article-body-ru" data-article-lang="ru" style="display:none">
+<h1>Установка Lexipane</h1>
+  <div class="article-meta"><span class="article-tag">Windows</span><span class="article-tag">macOS</span><span>Установка · разрешения · первый запуск</span></div>
+  <h2><span class="article-os-badge">Windows</span></h2>
+  <p class="article-os-sub">Windows 10 / 11 · 64-bit</p>
+  <ol><li><span><strong>Скачайте установщик</strong> на главной странице и сохраните <code>Lexipane.exe</code>.</span></li><li><span><strong>Запустите установщик.</strong> Если SmartScreen показывает предупреждение, выберите <strong>Подробнее -> Выполнить в любом случае</strong>.</span></li><li><span>Завершите установку и запустите Lexipane из меню Пуск или с рабочего стола.</span></li><li><span>При первом запуске выберите языки и режим перевода.</span></li></ol>
+  <div class="article-note"><strong>Антивирусы:</strong> unsigned или свежие установщики иногда дают false positive. Lexipane не содержит вредоносного кода; при необходимости добавьте папку установки в исключения.</div>
+  <h2><span class="article-os-badge">macOS</span></h2>
+  <p class="article-os-sub">macOS 13 Ventura и новее</p>
+  <ol><li><span><strong>Скачайте DMG</strong> на главной странице.</span></li><li><span>Откройте его и перетащите <code>Lexipane.app</code> в <code>Applications</code>.</span></li><li><span>Для первого запуска найдите app в Finder, нажмите правой кнопкой и выберите <strong>Open</strong>.</span></li><li><span>Разрешите Accessibility, Input Monitoring и Screen Recording.</span></li></ol>
+  <div class="article-note"><strong>Если Gatekeeper блокирует приложение:</strong> выполните <code>xattr -dr com.apple.quarantine /Applications/Lexipane.app</code>, затем снова запустите через Finder.</div>
+  <h2>Первый захват</h2>
+  <p>Нажмите hotkey захвата, выделите область с текстом, и Lexipane покажет перевод в overlay. Потом настройте языки и provider mode в Settings.</p>
+</div>
 <div id="app"></div>
 <script src="assets/config.js"></script>
 <script src="assets/i18n.js"></script>

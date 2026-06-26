@@ -6,47 +6,39 @@
 <base href="../" />
 <title>Lexipane AI modes</title>
 <link rel="icon" href="assets/logo/favicon.png" />
-<link rel="stylesheet" href="assets/lexipane.css?v=3" />
-<link rel="stylesheet" href="assets/site.css?v=3" />
+<link rel="stylesheet" href="assets/lexipane.css?v=4" />
+<link rel="stylesheet" href="assets/site.css?v=4" />
 </head>
 <body data-page="article" data-back="guides.html">
-<div id="article-body" style="display:none">
-  <h1>AI modes in Lexipane</h1>
-  <div class="article-meta">
-    <span class="article-tag">Pro</span>
-    <span class="article-tag">OpenAI</span>
-    <span class="article-tag">Without AI</span>
-    <span>Provider settings · credits · local fallback</span>
-  </div>
-
+<div id="article-body-en" data-article-lang="en" style="display:none">
+<h1>AI modes in Lexipane</h1>
+  <div class="article-meta"><span class="article-tag">Pro</span><span class="article-tag">OpenAI</span><span class="article-tag">Without AI</span><span>Provider settings · credits · local fallback</span></div>
   <p>Lexipane has three AI paths. <strong>Lexipane Cloud</strong> uses Pro credits through the Lexipane backend. <strong>OpenAI with your own key</strong> connects directly from your computer and is billed by OpenAI to your account. <strong>Without AI</strong> uses dictionaries and translator fallback without an LLM provider.</p>
-
   <img class="article-img" src="assets/guides/settings-ai.jpg" alt="Lexipane AI settings" />
   <div class="article-img-caption">Provider settings in the desktop app.</div>
-
   <h2>Lexipane Cloud</h2>
-  <ul>
-    <li><strong>Best for:</strong> Pro users who want AI explanations without managing an OpenAI key.</li>
-    <li><strong>Credits:</strong> the monthly allowance is counted on the backend by actual model usage. When credits run out, Cloud AI pauses until renewal or top-up.</li>
-    <li><strong>Privacy:</strong> selected text is sent to the Lexipane backend, then to OpenAI. The desktop app never contains the master OpenAI key.</li>
-  </ul>
-
+  <ul><li><strong>Best for:</strong> Pro users who want AI explanations without managing an OpenAI key.</li><li><strong>Credits:</strong> the monthly allowance is counted on the backend by actual model usage. When credits run out, Cloud AI pauses until renewal or top-up.</li><li><strong>Privacy:</strong> selected text is sent to the Lexipane backend, then to OpenAI. The desktop app never contains the master OpenAI key.</li></ul>
   <h2>OpenAI with your own key</h2>
-  <ul>
-    <li><strong>Best for:</strong> unlimited personal usage under your own OpenAI billing limits.</li>
-    <li><strong>Billing:</strong> requests go directly from your computer to OpenAI and do not spend Lexipane Cloud credits.</li>
-    <li><strong>Connection:</strong> your network must be able to reach OpenAI servers. If OpenAI is unavailable in your region, use a VPN or switch to Without AI.</li>
-  </ul>
-
+  <ul><li><strong>Best for:</strong> unlimited personal usage under your own OpenAI billing limits.</li><li><strong>Billing:</strong> requests go directly from your computer to OpenAI and do not spend Lexipane Cloud credits.</li><li><strong>Connection:</strong> your network must be able to reach OpenAI servers. If OpenAI is unavailable in your region, use a VPN or switch to Without AI.</li></ul>
   <h2>Without AI mode</h2>
-  <ul>
-    <li><strong>Best for:</strong> quick translation, offline dictionary lookups and basic Anki cards.</li>
-    <li><strong>Online fallback:</strong> can use Google Translate unofficial endpoint when enabled.</li>
-    <li><strong>Offline-only:</strong> disables web requests, but quality depends entirely on installed dictionary packs.</li>
-  </ul>
-
+  <ul><li><strong>Best for:</strong> quick translation, offline dictionary lookups and basic Anki cards.</li><li><strong>Online fallback:</strong> can use Google Translate unofficial endpoint when enabled.</li><li><strong>Offline-only:</strong> disables web requests, but quality depends entirely on installed dictionary packs.</li></ul>
   <h2>Credit rule</h2>
   <p>Lexipane Cloud credits are enforced on the server. The desktop app never stores the master OpenAI key and never creates OpenAI keys by itself. If the backend or OpenAI is unavailable, Lexipane shows a connection message and you can retry later, enable VPN, switch to your own key, or use Without AI.</p>
+</div>
+<div id="article-body-ru" data-article-lang="ru" style="display:none">
+<h1>AI-режимы в Lexipane</h1>
+  <div class="article-meta"><span class="article-tag">Pro</span><span class="article-tag">OpenAI</span><span class="article-tag">Without AI</span><span>Провайдеры · кредиты · локальный fallback</span></div>
+  <p>В Lexipane есть три пути. <strong>Lexipane Cloud</strong> использует Pro-кредиты через backend Lexipane. <strong>OpenAI со своим ключом</strong> подключается напрямую с вашего компьютера и оплачивается в вашем аккаунте OpenAI. <strong>Without AI</strong> использует словари и переводчик без LLM-провайдера.</p>
+  <img class="article-img" src="assets/guides/settings-ai.jpg" alt="Настройки AI в Lexipane" />
+  <div class="article-img-caption">Настройки провайдера в desktop-приложении.</div>
+  <h2>Lexipane Cloud</h2>
+  <ul><li><strong>Для кого:</strong> Pro-пользователи, которым нужны AI-объяснения без настройки собственного OpenAI key.</li><li><strong>Кредиты:</strong> месячный лимит считается на backend по фактическому расходу модели. Когда кредиты заканчиваются, Cloud AI ставится на паузу до продления или пополнения.</li><li><strong>Приватность:</strong> выделенный текст идет в backend Lexipane, затем к провайдеру. Desktop-приложение не содержит мастер-ключ OpenAI.</li></ul>
+  <h2>OpenAI со своим ключом</h2>
+  <ul><li><strong>Для кого:</strong> личное использование в рамках ваших лимитов OpenAI.</li><li><strong>Оплата:</strong> запросы идут напрямую с компьютера в OpenAI и не тратят кредиты Lexipane Cloud.</li><li><strong>Связь:</strong> ваша сеть должна открывать OpenAI. Если OpenAI недоступен в регионе, используйте VPN или переключитесь на Without AI.</li></ul>
+  <h2>Without AI</h2>
+  <ul><li><strong>Для кого:</strong> быстрый перевод, offline-словари и базовые Anki-карточки.</li><li><strong>Online fallback:</strong> при включении может использовать неофициальный endpoint Google Translate.</li><li><strong>Только offline:</strong> отключает web-запросы, но качество зависит от установленных словарных паков.</li></ul>
+  <h2>Правило кредитов</h2>
+  <p>Кредиты Lexipane Cloud проверяются на сервере. Desktop-приложение не хранит мастер-ключ OpenAI и не создает OpenAI API keys само. Если backend или OpenAI недоступны, Lexipane показывает понятное сообщение: можно повторить позже, включить VPN, перейти на свой ключ или использовать Without AI.</p>
 </div>
 <div id="app"></div>
 <script src="assets/config.js"></script>

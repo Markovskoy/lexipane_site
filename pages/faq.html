@@ -1,100 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lexipane — FAQ</title>
-<link rel="icon" href="../assets/logo/favicon.png" />
-<link rel="stylesheet" href="../assets/lexipane.css" />
-<link rel="stylesheet" href="../assets/site.css" />
-<style>
-  .faq-wrap { max-width: 760px; margin: 0 auto; padding: 52px 28px 90px; }
-  .faq-wrap h1 { font: var(--text-display); font-size: 40px; letter-spacing: -0.035em; margin: 0 0 8px; }
-  .faq-wrap .sub { font: var(--text-body); color: var(--text-muted); margin: 0 0 40px; }
-  .faq-item { border-top: 1px solid var(--border); padding: 20px 0; }
-  .faq-item:last-child { border-bottom: 1px solid var(--border); }
-  .faq-q { font: var(--text-h2); font-size: 16px; font-weight: 600; color: var(--text-primary); margin: 0 0 8px; }
-  .faq-a { font: var(--text-body); font-size: 15px; color: var(--text-muted); line-height: 1.7; margin: 0; }
-  .faq-a a { color: var(--accent); text-decoration: none; }
-  .backlink { display: inline-flex; align-items: center; gap: 6px; }
-</style>
+<base href="../" />
+<title>Lexipane FAQ</title>
+<link rel="icon" href="assets/logo/favicon.png" />
+<link rel="stylesheet" href="assets/lexipane.css?v=4" />
+<link rel="stylesheet" href="assets/site.css?v=4" />
 </head>
-<body data-page="faq">
-<div class="glow"></div>
-<header class="site-head"><div class="wrap">
-  <a class="brand" href="../index.html"><img src="../assets/logo/lexipane-icon.svg" width="30" height="30" alt="Lexipane"/><b>Lexipane</b></a>
-  <span class="spacer"></span>
-  <a class="tab backlink" href="../index.html">← Back to site</a>
-</div></header>
-
-<main class="faq-wrap">
-  <h1>FAQ</h1>
-  <p class="sub">Common questions about Lexipane. More questions? Ask in the <a href="https://t.me/lexipane">Telegram channel</a>.</p>
-
-  <div class="faq-item">
-    <p class="faq-q">What does Lexipane do?</p>
-    <p class="faq-a">Lexipane is a desktop overlay that lets you translate and look up words from any window on your screen — articles, books, games, PDFs, or subtitles — without switching apps. You can save words to Anki with one key.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">Does it work with any application?</p>
-    <p class="faq-a">Yes. Lexipane reads the screen directly using OCR, so it works with any window including browsers, games, PDF viewers, terminals, and IDEs.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">Is an internet connection required?</p>
-    <p class="faq-a">Basic capture, OCR, and dictionary lookup work offline with local data. Translation and AI explanations require an internet connection unless you use fully offline mode.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">Is my screen content sent to a server?</p>
-    <p class="faq-a">Only the text you capture is sent — and only to the AI provider you configure. If you use Lexipane AI Cloud (Pro), captured text goes through the Lexipane backend to the provider. If you use your own API key, it goes directly to that provider. Nothing else leaves your machine. See the <a href="../legal/privacy.html">Privacy Policy</a> for details.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">What is the difference between Free and Pro?</p>
-    <p class="faq-a">Free gives you screen capture, OCR, dictionary translation, and Anki export — no AI key required. Pro adds AI modes (your own key or Lexipane AI Cloud credits), AI grammar explanations, and Game Freeze. See the <a href="../pricing.html">pricing page</a> for the full list.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">Can I use Lexipane without Anki?</p>
-    <p class="faq-a">Yes. You can save to clipboard, markdown, or a local JSONL history file. Anki is the primary integration but is not required.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">Does Game Freeze work with online games?</p>
-    <p class="faq-a">No. Game Freeze is designed for offline and single-player games only. Do not use it with online games or games protected by anti-cheat software. Lexipane includes safety measures and a denylist for this purpose.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">How do I activate a Pro license key?</p>
-    <p class="faq-a">Open Lexipane Settings → Plan, enter your license key in the Activate section, and click Activate. The key is stored locally on your device.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">What happens when AI credits run out?</p>
-    <p class="faq-a">Lexipane AI Cloud pauses until the next billing period resets your credits. You can continue using No AI mode or switch to your own API key at any time.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">macOS says the app is from an unidentified developer. What do I do?</p>
-    <p class="faq-a">Right-click Lexipane.app and choose Open, then confirm. Alternatively, run: <code>xattr -dr com.apple.quarantine /Applications/Lexipane.app</code>. This is a temporary step until the app is signed with an Apple Developer ID.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">Where can I report bugs or request features?</p>
-    <p class="faq-a">Join the <a href="https://t.me/lexipane">Telegram channel</a> or open an issue on GitHub.</p>
-  </div>
-
-  <div class="faq-item">
-    <p class="faq-q">How do I request a refund?</p>
-    <p class="faq-a">See the <a href="../legal/refund.html">Refund Policy</a> and contact us via Telegram with your purchase details.</p>
-  </div>
-</main>
-
-<footer class="site-foot"><div class="foot-bar"><div class="wrap">
-  <a href="../legal/terms.html">Terms and Conditions</a>
-  <span>© 2026 Lexipane. All rights reserved.</span>
-</div></div></footer>
+<body data-page="article" data-back="index.html">
+<div id="article-body-en" data-article-lang="en" style="display:none">
+<h1>FAQ</h1><div class="article-meta"><span>Common questions about Lexipane. More questions? Ask in the Telegram channel.</span></div>
+  <h2>What does Lexipane do?</h2><p>Lexipane is a desktop overlay that translates and explains text from any window on your screen - articles, books, games, PDFs, or subtitles - without switching apps. You can save words to Anki with one key.</p>
+  <h2>Does it work with any application?</h2><p>Yes. Lexipane reads the screen directly using OCR, so it works with browsers, games, PDF viewers, terminals, IDEs, and most desktop windows.</p>
+  <h2>Is an internet connection required?</h2><p>Basic capture, OCR, dictionary lookup and local history can work offline with installed data. Online translation and AI explanations need a provider connection unless you use a fully local endpoint.</p>
+  <h2>Is my screen content sent to a server?</h2><p>Only the text you capture is sent, and only to the provider mode you choose. Lexipane Cloud goes through the Lexipane backend; your own key or custom endpoint goes directly to that provider.</p>
+  <h2>What is Free vs Pro?</h2><p>Free includes screen capture, OCR, dictionary translation and Anki export. Pro is planned for Lexipane Cloud credits, AI explanations, Game Freeze and billing-backed license activation.</p>
+  <h2>Can I use Lexipane without Anki?</h2><p>Yes. Anki is the primary integration, but clipboard, markdown and local history workflows can still be useful.</p>
+  <h2>What happens when AI credits run out?</h2><p>Lexipane Cloud pauses until renewal or top-up. You can continue in Without AI mode or switch to your own API key/custom endpoint.</p>
+</div>
+<div id="article-body-ru" data-article-lang="ru" style="display:none">
+<h1>FAQ</h1><div class="article-meta"><span>Частые вопросы о Lexipane. Остальные вопросы можно задать в Telegram.</span></div>
+  <h2>Что делает Lexipane?</h2><p>Lexipane - desktop overlay, который переводит и объясняет текст из любого окна на экране: статьи, книги, игры, PDF или субтитры. Переключаться между приложениями не нужно. Слова можно сохранять в Anki одной клавишей.</p>
+  <h2>Работает ли с любым приложением?</h2><p>Да. Lexipane читает экран через OCR, поэтому работает с browsers, games, PDF viewers, terminals, IDEs и большинством desktop windows.</p>
+  <h2>Нужен ли интернет?</h2><p>Базовый capture, OCR, dictionary lookup и local history могут работать offline с установленными данными. Online translation и AI explanations требуют provider connection, если вы не используете полностью локальный endpoint.</p>
+  <h2>Отправляется ли содержимое экрана на сервер?</h2><p>Отправляется только тот текст, который вы захватили, и только в выбранном provider mode. Lexipane Cloud идет через backend Lexipane; свой key или custom endpoint идет напрямую к этому provider.</p>
+  <h2>Чем отличаются Free и Pro?</h2><p>Free включает screen capture, OCR, dictionary translation и Anki export. Pro планируется для Lexipane Cloud credits, AI explanations, Game Freeze и license activation через billing.</p>
+  <h2>Можно ли без Anki?</h2><p>Да. Anki - основная интеграция, но clipboard, markdown и local history тоже могут быть полезны.</p>
+  <h2>Что если AI-кредиты закончились?</h2><p>Lexipane Cloud ставится на паузу до продления или top-up. Можно продолжать в Without AI mode или переключиться на свой API key/custom endpoint.</p>
+</div>
+<div id="app"></div>
+<script src="assets/config.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/icons.js"></script>
+<script src="assets/app.js"></script>
 </body>
 </html>
